@@ -1,0 +1,621 @@
+{
+  "header" : {
+    "dataModelVersion" : "2"
+  },
+  "content" : {
+    "comments" : "",
+    "componentType" : "PROCESS_GROUP",
+    "connections" : [ {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "a65a09e4-0163-1000-beae-015cdaaea831",
+        "id" : "31472c84-0128-352b-b7e0-0ade8af6b0bd",
+        "name" : "LogMessage",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "945a2481-f010-3425-882f-996e3637427a",
+      "identifier" : "b133657d-7aa8-375d-b479-9887288c4ae2",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "a65a09e4-0163-1000-beae-015cdaaea831",
+        "id" : "97677a60-d93c-33dc-a8b6-90d8508a6073",
+        "name" : "PutEmail",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "a65a09e4-0163-1000-beae-015cdaaea831",
+        "id" : "15c8e9d4-4204-3d7f-8a9f-cb8d90fd925e",
+        "name" : "EncryptContent",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "945a2481-f010-3425-882f-996e3637427a",
+      "identifier" : "f8b4fc2b-222e-39f6-b95e-0cb05d97c9af",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "a65a09e4-0163-1000-beae-015cdaaea831",
+        "id" : "3d6c2bdf-677c-36b7-b662-259ba23f72cb",
+        "name" : "LogMessage",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "a65a09e4-0163-1000-beae-015cdaaea831",
+        "id" : "a863ddc5-c2e0-308f-8074-8d385a7dc11b",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "945a2481-f010-3425-882f-996e3637427a",
+      "identifier" : "1a3a40ee-1a0a-3a74-84ca-9c664c52a945",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "a65a09e4-0163-1000-beae-015cdaaea831",
+        "id" : "5e05d09a-0f51-3a80-9af5-ad4352af6f30",
+        "name" : "failedXML",
+        "type" : "INPUT_PORT"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "a65a09e4-0163-1000-beae-015cdaaea831",
+        "id" : "3d6c2bdf-677c-36b7-b662-259ba23f72cb",
+        "name" : "LogMessage",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "945a2481-f010-3425-882f-996e3637427a",
+      "identifier" : "327bce05-f88a-3859-87c5-ed6d0802a746",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "a65a09e4-0163-1000-beae-015cdaaea831",
+        "id" : "a863ddc5-c2e0-308f-8074-8d385a7dc11b",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "a65a09e4-0163-1000-beae-015cdaaea831",
+        "id" : "97677a60-d93c-33dc-a8b6-90d8508a6073",
+        "name" : "PutEmail",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "945a2481-f010-3425-882f-996e3637427a",
+      "identifier" : "b68ae666-f270-3994-9f1b-474dd9c17153",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "a65a09e4-0163-1000-beae-015cdaaea831",
+        "id" : "15c8e9d4-4204-3d7f-8a9f-cb8d90fd925e",
+        "name" : "EncryptContent",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    } ],
+    "controllerServices" : [ ],
+    "funnels" : [ ],
+    "identifier" : "945a2481-f010-3425-882f-996e3637427a",
+    "inputPorts" : [ {
+      "comments" : "",
+      "componentType" : "INPUT_PORT",
+      "concurrentlySchedulableTaskCount" : 1,
+      "groupIdentifier" : "945a2481-f010-3425-882f-996e3637427a",
+      "identifier" : "24148612-084a-3b2e-9ccf-9d32e908622e",
+      "name" : "failedJSON",
+      "position" : {
+        "x" : -72.63045223926315,
+        "y" : -1044.9200007346585
+      },
+      "type" : "INPUT_PORT"
+    }, {
+      "comments" : "",
+      "componentType" : "INPUT_PORT",
+      "concurrentlySchedulableTaskCount" : 1,
+      "groupIdentifier" : "945a2481-f010-3425-882f-996e3637427a",
+      "identifier" : "5e05d09a-0f51-3a80-9af5-ad4352af6f30",
+      "name" : "failedXML",
+      "position" : {
+        "x" : -394.06696621719965,
+        "y" : -1045.8313529857373
+      },
+      "type" : "INPUT_PORT"
+    }, {
+      "comments" : "",
+      "componentType" : "INPUT_PORT",
+      "concurrentlySchedulableTaskCount" : 1,
+      "groupIdentifier" : "945a2481-f010-3425-882f-996e3637427a",
+      "identifier" : "c98c08cd-5cd1-3f3f-b495-6b930fdd5f8c",
+      "name" : "failedCSV",
+      "position" : {
+        "x" : -720.5750255442724,
+        "y" : -1041.539454824127
+      },
+      "type" : "INPUT_PORT"
+    } ],
+    "labels" : [ {
+      "componentType" : "LABEL",
+      "groupIdentifier" : "945a2481-f010-3425-882f-996e3637427a",
+      "height" : 90.37142944335938,
+      "identifier" : "994dae97-9978-3a0e-8d88-eb85448fd9d6",
+      "label" : "logging configuration can be managed through \n\nNIFI_HOME/conf/logback.xml\n\nhttps://logback.qos.ch/manual/index.html",
+      "position" : {
+        "x" : -730.933739473436,
+        "y" : -765.2088524097041
+      },
+      "style" : {
+        "font-size" : "12px"
+      },
+      "width" : 260.93682861328125
+    } ],
+    "name" : "ValidationFail",
+    "outputPorts" : [ ],
+    "position" : {
+      "x" : -876.388734872523,
+      "y" : -308.8854532866053
+    },
+    "processGroups" : [ ],
+    "processors" : [ {
+      "autoTerminatedRelationships" : [ ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.1"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "945a2481-f010-3425-882f-996e3637427a",
+      "identifier" : "a863ddc5-c2e0-308f-8074-8d385a7dc11b",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : -430.68281094376215,
+        "y" : -952.627019523962
+      },
+      "properties" : {
+        "filename" : "${filename:prepend(${now():format(\"yyyy-MM-dd-HH-mm-ss.\")})}",
+        "Store State" : "Do not store state"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "filename" : {
+          "displayName" : "filename",
+          "identifiesControllerService" : false,
+          "name" : "filename",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "success" ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.1"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "945a2481-f010-3425-882f-996e3637427a",
+      "identifier" : "31472c84-0128-352b-b7e0-0ade8af6b0bd",
+      "name" : "LogMessage",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 32.41801717585804,
+        "y" : -580.3952094033912
+      },
+      "properties" : {
+        "log-message" : "Email sent for invalid xml file: ${filename} ${validatexml.invalid.error}",
+        "log-level" : "info",
+        "log-prefix" : "XML Processing"
+      },
+      "propertyDescriptors" : {
+        "log-message" : {
+          "displayName" : "Log message",
+          "identifiesControllerService" : false,
+          "name" : "log-message",
+          "sensitive" : false
+        },
+        "log-level" : {
+          "displayName" : "Log Level",
+          "identifiesControllerService" : false,
+          "name" : "log-level",
+          "sensitive" : false
+        },
+        "log-prefix" : {
+          "displayName" : "Log prefix",
+          "identifiesControllerService" : false,
+          "name" : "log-prefix",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.LogMessage",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure" ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.1"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "945a2481-f010-3425-882f-996e3637427a",
+      "identifier" : "15c8e9d4-4204-3d7f-8a9f-cb8d90fd925e",
+      "name" : "EncryptContent",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : -440.33730428383797,
+        "y" : -583.1947206698309
+      },
+      "properties" : {
+        "Mode" : "Encrypt",
+        "key-derivation-function" : "NIFI_LEGACY",
+        "allow-weak-crypto" : "not-allowed",
+        "Encryption Algorithm" : "MD5_128AES"
+      },
+      "propertyDescriptors" : {
+        "private-keyring-passphrase" : {
+          "displayName" : "Private Keyring Passphrase",
+          "identifiesControllerService" : false,
+          "name" : "private-keyring-passphrase",
+          "sensitive" : false
+        },
+        "Mode" : {
+          "displayName" : "Mode",
+          "identifiesControllerService" : false,
+          "name" : "Mode",
+          "sensitive" : false
+        },
+        "key-derivation-function" : {
+          "displayName" : "Key Derivation Function",
+          "identifiesControllerService" : false,
+          "name" : "key-derivation-function",
+          "sensitive" : false
+        },
+        "public-key-user-id" : {
+          "displayName" : "Public Key User Id",
+          "identifiesControllerService" : false,
+          "name" : "public-key-user-id",
+          "sensitive" : false
+        },
+        "public-keyring-file" : {
+          "displayName" : "Public Keyring File",
+          "identifiesControllerService" : false,
+          "name" : "public-keyring-file",
+          "sensitive" : false
+        },
+        "raw-key-hex" : {
+          "displayName" : "Raw Key (hexadecimal)",
+          "identifiesControllerService" : false,
+          "name" : "raw-key-hex",
+          "sensitive" : false
+        },
+        "allow-weak-crypto" : {
+          "displayName" : "Allow insecure cryptographic modes",
+          "identifiesControllerService" : false,
+          "name" : "allow-weak-crypto",
+          "sensitive" : false
+        },
+        "private-keyring-file" : {
+          "displayName" : "Private Keyring File",
+          "identifiesControllerService" : false,
+          "name" : "private-keyring-file",
+          "sensitive" : false
+        },
+        "Encryption Algorithm" : {
+          "displayName" : "Encryption Algorithm",
+          "identifiesControllerService" : false,
+          "name" : "Encryption Algorithm",
+          "sensitive" : false
+        },
+        "Password" : {
+          "displayName" : "Password",
+          "identifiesControllerService" : false,
+          "name" : "Password",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.EncryptContent",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure" ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.1"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "945a2481-f010-3425-882f-996e3637427a",
+      "identifier" : "97677a60-d93c-33dc-a8b6-90d8508a6073",
+      "name" : "PutEmail",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 36.65845235873121,
+        "y" : -784.3742920745105
+      },
+      "properties" : {
+        "SMTP Socket Factory" : "javax.net.ssl.SSLSocketFactory",
+        "Message" : "Hi, \nThe attached file ${filename} did not process the failure was ${validatexml.invalid.error}\n\nSort your shit out",
+        "Attach File" : "true",
+        "SMTP Port" : "465",
+        "SMTP Auth" : "true",
+        "From" : "ianmac51@gmail.com",
+        "Include All Attributes In Message" : "true",
+        "SMTP Hostname" : "smtp.gmail.com",
+        "Subject" : "Message from NiFi ",
+        "SMTP X-Mailer Header" : "NiFi",
+        "Content Type" : "text/plain",
+        "SMTP Username" : "ianmac51@gmail.com",
+        "To" : "ianmac51@gmail.com",
+        "email-ff-content-as-message" : "false",
+        "SMTP TLS" : "false"
+      },
+      "propertyDescriptors" : {
+        "CC" : {
+          "displayName" : "CC",
+          "identifiesControllerService" : false,
+          "name" : "CC",
+          "sensitive" : false
+        },
+        "SMTP Socket Factory" : {
+          "displayName" : "SMTP Socket Factory",
+          "identifiesControllerService" : false,
+          "name" : "SMTP Socket Factory",
+          "sensitive" : false
+        },
+        "BCC" : {
+          "displayName" : "BCC",
+          "identifiesControllerService" : false,
+          "name" : "BCC",
+          "sensitive" : false
+        },
+        "Message" : {
+          "displayName" : "Message",
+          "identifiesControllerService" : false,
+          "name" : "Message",
+          "sensitive" : false
+        },
+        "Attach File" : {
+          "displayName" : "Attach File",
+          "identifiesControllerService" : false,
+          "name" : "Attach File",
+          "sensitive" : false
+        },
+        "attribute-name-regex" : {
+          "displayName" : "Attributes to Send as Headers (Regex)",
+          "identifiesControllerService" : false,
+          "name" : "attribute-name-regex",
+          "sensitive" : false
+        },
+        "SMTP Port" : {
+          "displayName" : "SMTP Port",
+          "identifiesControllerService" : false,
+          "name" : "SMTP Port",
+          "sensitive" : false
+        },
+        "SMTP Auth" : {
+          "displayName" : "SMTP Auth",
+          "identifiesControllerService" : false,
+          "name" : "SMTP Auth",
+          "sensitive" : false
+        },
+        "From" : {
+          "displayName" : "From",
+          "identifiesControllerService" : false,
+          "name" : "From",
+          "sensitive" : false
+        },
+        "Include All Attributes In Message" : {
+          "displayName" : "Include All Attributes In Message",
+          "identifiesControllerService" : false,
+          "name" : "Include All Attributes In Message",
+          "sensitive" : false
+        },
+        "SMTP Hostname" : {
+          "displayName" : "SMTP Hostname",
+          "identifiesControllerService" : false,
+          "name" : "SMTP Hostname",
+          "sensitive" : false
+        },
+        "Subject" : {
+          "displayName" : "Subject",
+          "identifiesControllerService" : false,
+          "name" : "Subject",
+          "sensitive" : false
+        },
+        "SMTP X-Mailer Header" : {
+          "displayName" : "SMTP X-Mailer Header",
+          "identifiesControllerService" : false,
+          "name" : "SMTP X-Mailer Header",
+          "sensitive" : false
+        },
+        "Content Type" : {
+          "displayName" : "Content Type",
+          "identifiesControllerService" : false,
+          "name" : "Content Type",
+          "sensitive" : false
+        },
+        "SMTP Username" : {
+          "displayName" : "SMTP Username",
+          "identifiesControllerService" : false,
+          "name" : "SMTP Username",
+          "sensitive" : false
+        },
+        "To" : {
+          "displayName" : "To",
+          "identifiesControllerService" : false,
+          "name" : "To",
+          "sensitive" : false
+        },
+        "SMTP Password" : {
+          "displayName" : "SMTP Password",
+          "identifiesControllerService" : false,
+          "name" : "SMTP Password",
+          "sensitive" : false
+        },
+        "email-ff-content-as-message" : {
+          "displayName" : "Flow file content as message",
+          "identifiesControllerService" : false,
+          "name" : "email-ff-content-as-message",
+          "sensitive" : false
+        },
+        "SMTP TLS" : {
+          "displayName" : "SMTP TLS",
+          "identifiesControllerService" : false,
+          "name" : "SMTP TLS",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutEmail",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.1"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "945a2481-f010-3425-882f-996e3637427a",
+      "identifier" : "3d6c2bdf-677c-36b7-b662-259ba23f72cb",
+      "name" : "LogMessage",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : -427.10004727188715,
+        "y" : -781.5888324470122
+      },
+      "properties" : {
+        "log-message" : " invalid xml file: ${filename} ${validatexml.invalid.error}",
+        "log-level" : "error",
+        "log-prefix" : "xml Error"
+      },
+      "propertyDescriptors" : {
+        "log-message" : {
+          "displayName" : "Log message",
+          "identifiesControllerService" : false,
+          "name" : "log-message",
+          "sensitive" : false
+        },
+        "log-level" : {
+          "displayName" : "Log Level",
+          "identifiesControllerService" : false,
+          "name" : "log-level",
+          "sensitive" : false
+        },
+        "log-prefix" : {
+          "displayName" : "Log prefix",
+          "identifiesControllerService" : false,
+          "name" : "log-prefix",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.LogMessage",
+      "yieldDuration" : "1 sec"
+    } ],
+    "remoteProcessGroups" : [ ],
+    "variables" : { }
+  }
+}
