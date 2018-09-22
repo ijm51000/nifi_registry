@@ -1,5 +1,6 @@
 flows:
   915e7ab3-06dc-4b3b-93c7-cbe5e3204f15: {ver: 1, file: Test_flow_file_generator.snapshot}
   e2290a2b-6499-4570-8238-124a3490d5e4: {ver: 1, file: webserver_test.snapshot}
+  a00c64d7-0831-48ce-aa8a-91cc56198f91: {ver: 1, file: weather_demo.snapshot}
 layoutVer: 1
 bucketId: 68d962ca-4218-4da2-b377-761f8db71df7
